@@ -55,6 +55,7 @@
     <Compile Include="SquareRoot.cs" />
     <Compile Include="StopWatch.cs" />
     <Compile Include="temperatureConversion.cs" />
+    <Compile Include="ToBinary.cs" />
     <Compile Include="VendingMachine.cs" />
   </ItemGroup>
   <ItemGroup>

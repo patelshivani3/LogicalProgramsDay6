@@ -8,7 +8,7 @@ namespace LogicalProgramsDay6
 {
     internal class FibonacciSeries
     {
-        public static void Series()
+        public  void Series()
         {
             int a = 0, b = 1, c;
             Console.WriteLine("Enter a number : ");

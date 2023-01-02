@@ -11,12 +11,12 @@ namespace LogicalProgramsDay6
         static void Main(string[] args)
         {
             Console.WriteLine("\nWelcome to Logical Programs.");
-            Console.WriteLine("\n1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.Reverse Number\n5.Coupon Number");
+            Console.WriteLine("\n1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.Reverse Number\n5.Coupon Number\n6.Stimulate Stopwatch");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
                 case 1:
-                    FibonacciSeries.Series();
+                    
                     break;
 
                 case 2:
@@ -33,6 +33,10 @@ namespace LogicalProgramsDay6
 
                 case 5:
                     CouponNumber.Number();
+                    break;
+
+                case 6:
+                    StopWatch.GetElapsedTime();
                     break;
 
 

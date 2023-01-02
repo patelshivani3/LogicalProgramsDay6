@@ -10,20 +10,25 @@ namespace LogicalProgramsDay6
     {
         public static void Number()
         {
-            int coupon;
-            Console.WriteLine("Enter a Number of Coupons : ");
-            int number = Convert.ToInt32(Console.ReadLine());
-            for (int i = 1; i <= number; i++)
+            int i = 0, count = 0;
+            Console.Write("\nEnter the number of distinct coupons:");
+            int coupon = Convert.ToInt32(Console.ReadLine());
+            bool[] is_collected = new bool[coupon];
+            while (i < coupon)
             {
-                coupon = RandomNum();
-                Console.WriteLine(coupon);
+                Random random = new Random();
+                int option = random.Next(1, 100);
+                int coupon1 = (int)(random.NextDouble() * coupon);
+                count++;
+                if (!is_collected[coupon1])
+                {
+                    i++;
+                    is_collected[coupon1] = true;
+                }
             }
+            Console.WriteLine("Total random number needed to have all distinct coupons : " + count);
         }
-        public static int RandomNum()
-        {
-            Random random = new Random();
-            random.Next();
-            return random.Next();
-        }
+        
+       
     }
 }

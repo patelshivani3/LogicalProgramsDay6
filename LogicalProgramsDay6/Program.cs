@@ -11,7 +11,7 @@ namespace LogicalProgramsDay6
         static void Main(string[] args)
         {
             Console.WriteLine("\nWelcome to Logical Programs.");
-            Console.WriteLine("\n1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.Reverse Number\n5.Coupon Number\n6.Stimulate Stopwatch\n7.Notes Vending Machine\n8.Days Of Week");
+            Console.WriteLine("\n1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.Reverse Number\n5.Coupon Number\n6.Stimulate Stopwatch\n7.Notes Vending Machine\n8.Days Of Week\n9.Temperature Conversion");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -46,6 +46,9 @@ namespace LogicalProgramsDay6
 
                 case 8:
                     DayOfWeek.Days();
+                    break;
+                case 9:
+                    TemperatureConversion.TempConvert();
                     break;
 
                 default:
